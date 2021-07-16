@@ -22,7 +22,7 @@ function assignListeners(){
 
 assignListeners();
 
-playButton.addEventListener("click", (e) => {
+playButton.addEventListener("click", () => {
     mainContainer.classList.remove("hide-content");
     playButton.classList.add("hide-content");
 });
@@ -65,9 +65,6 @@ function computerPick(){
 function playRound(){
     let computerChoice = computerPick();
     let outcome = "";
-
-    console.log("Computer: " + computerChoice);
-    console.log("Player: " + playerChoice);
 
     if (playerChoice == computerChoice) {
         
