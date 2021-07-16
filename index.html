@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> 
 </head>
 <body>
+
+    <h1 class="title">Rock, Paper, Scissors</h1>
     
 </body>
-    <script src="/script.js"></script>
+    <div class="rps-container">
+        <img id="rock" class="image" src="/images/rock.png" alt="Rock hand gesture">
+        <img id="paper" class="image" src="/images/paper.png" alt="Paper hand gesture">
+        <img id="scissors" class="image" src="/images/scissors.png" alt="Scissors hand gesture">
+    </div>
+    <div class="play-button-container">
+        <button class="play-button">Play</button>
+    </div>
+   <div class="hide-content main-container">
+        <div class="score-container">
+            <div class="score-child-container">
+                <p>Human Score:</p>
+                <p id="human-score"></p>
+            </div>
+            <div class="score-child-container">
+                <p>Computer Score:</p>
+                <p id="computer-score"></p>
+            </div>
+        </div>
+        <p class="round-info"></p>
+        <button class="hide-content play-again-button">Play again?</button>
+   </div> 
 </html>

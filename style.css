@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+body {
+    background-color: #FFEA00;
+    font-size: 16px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 3em;
+}
+
+.rps-container {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;  
+}
+
+@media (max-width: 800px){
+    .rps-container {
+        flex-direction: column;
+        
+    }
+}
+
+.image {
+    padding: 0 50px 0 50px;
+    transition: 0.2s;
+}
+
+.image:hover {
+    transform: scale(1.25);
+}
+
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.play-button {
+    font-size: 3em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
+
+.play-button:hover {
+    transform: scale(1.25);
+}
+
+.score-container {
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    max-width: 700px;
+}
+
+.score-container > p {
+    font-size: 1.8em;
+}
+
+.score-child-container {
+    flex-direction: column;
+}
+
+.score-child-container > p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hide-content {
+    display:none !important;
+}
+
+.round-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.play-again-button {
+    display: block;
+    margin: 50px auto;
+    font-size: 3em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
+
+.play-again-button:hover {
+    transform: scale(1.25);
+}
+
